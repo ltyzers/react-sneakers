@@ -53,8 +53,8 @@ function Card({
                 height={32}
                 src={
                   isFavorite
-                    ? "/img/favoriteActive.svg"
-                    : "/img/favoriteInactive.svg"
+                    ? "img/favoriteActive.svg"
+                    : "img/favoriteInactive.svg"
                 }
                 alt="Add favorite"
               ></img>
@@ -72,7 +72,7 @@ function Card({
                 width={32}
                 height={32}
                 src={
-                  isItemAdded(id) ? "/img/ordered.svg" : "/img/addProduct.svg"
+                  isItemAdded(id) ? "img/ordered.svg" : "img/addProduct.svg"
                 }
                 alt="Add to cart"
                 onClick={onClickAdd}
