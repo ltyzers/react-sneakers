@@ -1,11 +1,9 @@
 import Card from "../components/Card";
 import React from "react";
 import axios from "axios";
-import AppContext from "../context";
 
 function Orders() {
   const [orders, setOrders] = React.useState([]);
-  const { onAddToFavorites, onAddToCart } = React.useContext(AppContext);
   const [isLoading, setIsLoading] = React.useState(true);
 
   React.useEffect(() => {
